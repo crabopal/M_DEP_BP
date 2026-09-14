@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="7a9afd95-8d60-46aa-87a0-a933dc26e993">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ТранспортныеСредства" category="Object">
+				<xr:TypeId>55d2f7ee-c059-4367-927f-da696423789c</xr:TypeId>
+				<xr:ValueId>520192be-40c2-4794-aa11-3b75976df103</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ТранспортныеСредства" category="Ref">
+				<xr:TypeId>a6d6f46f-3725-4df0-9254-3a70029ff7a0</xr:TypeId>
+				<xr:ValueId>61f8de74-ccb9-4323-86eb-3e0790789fe3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ТранспортныеСредства" category="Selection">
+				<xr:TypeId>5508b9db-0ebe-4c38-8cdc-23eca267c429</xr:TypeId>
+				<xr:ValueId>1efe4704-258f-4f15-92fd-84a5d0304875</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ТранспортныеСредства" category="List">
+				<xr:TypeId>fb5b5f36-7419-40a4-929f-003a827ebabc</xr:TypeId>
+				<xr:ValueId>e32c1246-85a5-4733-816b-faaa7b883376</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ТранспортныеСредства" category="Manager">
+				<xr:TypeId>bf2947a0-c171-4fdc-a227-45fbde0c9ea5</xr:TypeId>
+				<xr:ValueId>8b709dc7-8f4c-4617-8f8d-29277770d834</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ТранспортныеСредства</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>90241ccb-f167-4393-8f70-4ceb4c763c69</ExtendedConfigurationObject>
+			<CodeLength>17</CodeLength>
+			<DescriptionLength>150</DescriptionLength>
+			<CodeType>String</CodeType>
+			<CodeAllowedLength>Variable</CodeAllowedLength>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="ad3c3e99-bd66-4e98-956b-31455b75f30e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Марка</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2c6df948-d8c5-4880-bbe8-3e80fd6edee7</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>120</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="41700ea4-27b7-43a0-ac86-d561426fe584">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Собственник</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f0f403d5-7d06-4f4f-bbca-47481844e85f</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="b32b5f0d-f54d-494b-8f8e-912b0a06d53c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Топливо</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>5305a23d-0226-4b25-bddb-540010dabc0f</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="bda07564-7aa0-41e1-8850-4400d63b9e1e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РегистрационныйЗнак</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>81a8e547-9918-4e96-95b6-236332e1a621</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>12</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="584cc3d2-1ed6-4d96-896b-b4d97ee54fc0">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>НормаРасхода</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>7d242561-125f-4726-9bd6-96d4d2a327d5</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>7</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="a5b0c815-e33e-47cb-9096-4baecbc74469">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РегистрационныйЗнакПрицепа</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>33782d79-60de-41a7-a073-86fa81619e7f</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>12</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="57017314-c5fc-49c3-8d74-aa6732e37c8b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>МаркаПрицепа</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>0dd82419-ccc7-46a5-9fa4-40308268093f</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>120</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="30d2e078-6587-4651-9963-f42c631968c0">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ОформляютсяПутевыеЛисты</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>675c3345-3538-4219-a744-540380909880</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="3cc9d65e-16c6-4a80-8045-ffee23164a10">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Модель</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>71545416-0235-4bde-bab4-3b3421ec7f58</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.уатМоделиТС</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="6d8d23f9-a05d-4328-a709-46c4e85cb446">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ТипТС</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>537aff3b-a0a5-463d-b911-8d80e0742f00</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.уатТипыТС</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

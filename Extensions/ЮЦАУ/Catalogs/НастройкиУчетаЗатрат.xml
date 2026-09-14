@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="ae8b3979-40a3-45e8-8ea5-8f821349b5e0">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.НастройкиУчетаЗатрат" category="Object">
+				<xr:TypeId>8ac99bee-fc96-4b6e-9951-11a723c89fe9</xr:TypeId>
+				<xr:ValueId>1057de65-9b21-49d2-b7a1-7c5e5512b7da</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.НастройкиУчетаЗатрат" category="Ref">
+				<xr:TypeId>1907afcc-f78c-47a5-bfe7-89e10c2ce777</xr:TypeId>
+				<xr:ValueId>8b0870fc-7fae-489b-a269-bb0ab51bd2d5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.НастройкиУчетаЗатрат" category="Selection">
+				<xr:TypeId>b01ea7e4-a786-4aed-8200-dad3969b1c03</xr:TypeId>
+				<xr:ValueId>b3d5ce60-80e5-4677-a437-7cc5adc9c071</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.НастройкиУчетаЗатрат" category="List">
+				<xr:TypeId>87c8b3b1-6256-424e-8eac-85afc8858b51</xr:TypeId>
+				<xr:ValueId>a9172358-e891-488c-a3b9-eeaf51b16622</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.НастройкиУчетаЗатрат" category="Manager">
+				<xr:TypeId>3373b92f-be95-4f3b-9b61-7ebdeca6e36d</xr:TypeId>
+				<xr:ValueId>52c65053-fe96-4ff7-a534-2960cfe1444d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>НастройкиУчетаЗатрат</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>4c4984d8-6bef-4adc-bb96-f9917e76f5ea</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

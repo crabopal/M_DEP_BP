@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="a88b8eee-33e6-454b-a429-ebe7d0567274">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ДействиеНДСВСтоимостиТоваров" category="Ref">
+				<xr:TypeId>38971f16-55de-41c9-8297-05a1b07790bd</xr:TypeId>
+				<xr:ValueId>6b2a097b-cf55-422b-b27e-ad65deaf7d53</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ДействиеНДСВСтоимостиТоваров" category="Manager">
+				<xr:TypeId>252b1334-3106-4c00-9921-4c58996b6ffa</xr:TypeId>
+				<xr:ValueId>882af170-2506-4a44-bceb-ae5b4519c430</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ДействиеНДСВСтоимостиТоваров" category="List">
+				<xr:TypeId>e0a27def-ec64-49a1-b4c4-d72d1d61fc62</xr:TypeId>
+				<xr:ValueId>5ed41824-8056-4fce-bf12-5151064e6d1b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ДействиеНДСВСтоимостиТоваров</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="c75f802f-b362-41a9-b38e-1941320ace7b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВключитьВСтоимость</Name>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9da65d8f-1859-4a04-88c6-5dd97a1fd328">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>НеИзменять</Name>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="feedec33-e2d2-4999-9841-7fa386312211">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ИсключитьИзСтоимости</Name>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

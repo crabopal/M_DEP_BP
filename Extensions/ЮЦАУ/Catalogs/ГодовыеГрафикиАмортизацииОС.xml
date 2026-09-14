@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="b19653d0-ad8a-4c0a-a9f6-107b9099273c">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ГодовыеГрафикиАмортизацииОС" category="Object">
+				<xr:TypeId>4a121c98-98e8-4e2c-bf7c-193616640b4a</xr:TypeId>
+				<xr:ValueId>bfca188b-6eb1-46b5-8d4f-bab7a412eab5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ГодовыеГрафикиАмортизацииОС" category="Ref">
+				<xr:TypeId>61ee48c7-bd25-41f4-857e-ed2750d72bf1</xr:TypeId>
+				<xr:ValueId>532dafe3-cee6-4c1f-bffc-ecf1c03e3fac</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ГодовыеГрафикиАмортизацииОС" category="Selection">
+				<xr:TypeId>1f2730e5-218b-4090-a7f2-281c312b6e20</xr:TypeId>
+				<xr:ValueId>20181bd8-fd14-4ea7-87cb-ebda2273c6f3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ГодовыеГрафикиАмортизацииОС" category="List">
+				<xr:TypeId>5c416ce6-96b1-4d50-b017-f530fd3a78f1</xr:TypeId>
+				<xr:ValueId>6d517b3f-231a-45de-9b92-84b2abbc79ae</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ГодовыеГрафикиАмортизацииОС" category="Manager">
+				<xr:TypeId>5f0f27e8-4c42-4822-94f1-bc662944f372</xr:TypeId>
+				<xr:ValueId>033c0f21-991f-4336-a991-e2681a085dce</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ГодовыеГрафикиАмортизацииОС</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

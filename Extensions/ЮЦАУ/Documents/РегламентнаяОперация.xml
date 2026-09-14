@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="1cee7305-f9b4-4efc-bab2-56d92fa277c8">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.РегламентнаяОперация" category="Object">
+				<xr:TypeId>be82e9f6-f488-4f10-a189-caaa9deff64a</xr:TypeId>
+				<xr:ValueId>5959639e-5bbe-4c1e-a42e-da5734d9d12e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.РегламентнаяОперация" category="Ref">
+				<xr:TypeId>7215e98b-c888-4ff1-8b4f-ac542a1c37ae</xr:TypeId>
+				<xr:ValueId>d1cb1444-5576-46d9-ac63-face3749791a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.РегламентнаяОперация" category="Selection">
+				<xr:TypeId>6af5b926-1316-410e-977d-427bc9219c8e</xr:TypeId>
+				<xr:ValueId>8e6973d7-94ae-4274-915c-0bebd13e9db7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.РегламентнаяОперация" category="List">
+				<xr:TypeId>34afacff-f10a-436e-8634-ed1cf22d55d7</xr:TypeId>
+				<xr:ValueId>074eaf7b-c17d-462c-bb45-d2a539541d06</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.РегламентнаяОперация" category="Manager">
+				<xr:TypeId>583b8b12-339c-46f8-ab89-4df9b6fc18f8</xr:TypeId>
+				<xr:ValueId>ed1c9376-77c0-4fa7-919c-71fec8e837a8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>РегламентнаяОперация</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="d5fe441f-3029-4043-9528-d38ad3d146be">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВидОперации</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>00b82087-2d21-424e-8c6b-692c2fd262a1</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыРегламентныхОпераций</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2bf4bb52-5dbd-4bd4-89d8-aec4ec71d7cc">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Организация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>8cd89d2c-431b-46ce-a94a-f84325313c51</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="0760d824-0927-4715-a3c6-ed3db8b146e2">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ПорядокПогашенияСтоимостиОС" category="Ref">
+				<xr:TypeId>7292f23c-8725-4d03-879b-326c2fae15ae</xr:TypeId>
+				<xr:ValueId>d80b1678-dd85-46a3-ad22-5716f217c0b0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ПорядокПогашенияСтоимостиОС" category="Manager">
+				<xr:TypeId>30c48c60-b3f5-427c-8917-679dc58e98b8</xr:TypeId>
+				<xr:ValueId>d0e4d160-ff65-4210-aa0b-2d4fe7f2b54c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ПорядокПогашенияСтоимостиОС" category="List">
+				<xr:TypeId>81279f1c-aac3-447a-b12b-f5399dc9da05</xr:TypeId>
+				<xr:ValueId>741926ae-7821-4eee-8095-a171ff035b11</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПорядокПогашенияСтоимостиОС</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

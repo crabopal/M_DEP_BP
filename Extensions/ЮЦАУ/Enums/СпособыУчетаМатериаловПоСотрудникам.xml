@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="be9683a0-3fd1-4f49-8a61-d8d92ca173bd">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СпособыУчетаМатериаловПоСотрудникам" category="Ref">
+				<xr:TypeId>fa1a99de-3430-4ccb-b2bf-01119167e542</xr:TypeId>
+				<xr:ValueId>e4bb5de7-735b-4e60-9846-fbd7b35b5597</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СпособыУчетаМатериаловПоСотрудникам" category="Manager">
+				<xr:TypeId>e0d8d80b-f97d-4d2b-9821-55a86aee6b3c</xr:TypeId>
+				<xr:ValueId>6619cad6-0c08-4a9b-854d-e2b092eb9123</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СпособыУчетаМатериаловПоСотрудникам" category="List">
+				<xr:TypeId>a2332e91-2046-43f1-8822-4fcc39630a14</xr:TypeId>
+				<xr:ValueId>5de89fcc-6b65-486e-835b-33bd46e3d6b3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СпособыУчетаМатериаловПоСотрудникам</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>5a3c9568-12da-48bf-b23d-a2ac70a1731f</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="6ea43941-fdb9-41d1-89b5-8d0696548294">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Расход</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>79e2c72e-e2a9-456f-9bbe-5a2d0b4ca957</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="04fb4b49-61af-486a-aca4-52ca185c8fea">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РасходИОстатки</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e1752f62-3082-4fbb-8e33-d3705f64bf34</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

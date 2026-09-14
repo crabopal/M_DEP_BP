@@ -1,0 +1,1753 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВидОперации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид операции</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВидОперацииРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="ПериодЗаполненияСтрокой" id="3">
+					<DataPath>ПериодЗаполненияСтрокой</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период заполнения</v8:content>
+						</v8:item>
+					</Title>
+					<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
+					<WarningOnEdit>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение месяца начисления приведет к перезаполнению документа</v8:content>
+						</v8:item>
+					</WarningOnEdit>
+					<Width>12</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ChoiceButton>true</ChoiceButton>
+					<SpinButton>true</SpinButton>
+					<ChoiceButtonPicture>
+						<xr:Ref>StdPicture.InputFieldCalendar</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</ChoiceButtonPicture>
+					<ContextMenu name="ПериодЗаполненияСтрокойКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ПериодЗаполненияСтрокойРасширеннаяПодсказка" id="5"/>
+					<Events>
+						<Event name="OnChange">ПериодЗаполненияСтрокойПриИзменении</Event>
+						<Event name="AutoComplete">ПериодЗаполненияСтрокойАвтоПодбор</Event>
+						<Event name="StartChoice">ПериодЗаполненияСтрокойНачалоВыбора</Event>
+						<Event name="Tuning">ПериодЗаполненияСтрокойРегулирование</Event>
+						<Event name="TextEditEnd">ПериодЗаполненияСтрокойОкончаниеВводаТекста</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДокументы" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДокументыРасширеннаяПодсказка" id="9"/>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="92">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="93"/>
+			<ChildItems>
+				<Page name="ГруппаДокументыДвиженияТМЦ" id="269">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документы движения ТМЦ</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа документы движения ТМЦ</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДокументыДвиженияТМЦРасширеннаяПодсказка" id="270"/>
+					<ChildItems>
+						<Table name="ТаблицаДокументыТМЦ" id="271">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаДокументыТМЦ</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаДокументыТМЦКонтекстноеМеню" id="272"/>
+							<AutoCommandBar name="ТаблицаДокументыТМЦКоманднаяПанель" id="273">
+								<ChildItems>
+									<Button name="ТаблицаДокументыТМЦЗаполнитьТаблицуДвиженияТМЦ" id="299">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗаполнитьТаблицуДвиженияТМЦ</CommandName>
+										<ExtendedTooltip name="ТаблицаДокументыТМЦЗаполнитьТаблицуДвиженияТМЦРасширеннаяПодсказка" id="300"/>
+									</Button>
+									<Button name="ТаблицаДокументыТМЦВыгрузитьДокументыТМЦвУАТ" id="301">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ВыгрузитьДокументыТМЦвУАТ</CommandName>
+										<ExtendedTooltip name="ТаблицаДокументыТМЦВыгрузитьДокументыТМЦвУАТРасширеннаяПодсказка" id="302"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаДокументыТМЦРасширеннаяПодсказка" id="274"/>
+							<SearchStringAddition name="ТаблицаДокументыТМЦСтрокаПоиска" id="275">
+								<AdditionSource>
+									<Item>ТаблицаДокументыТМЦ</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДокументыТМЦСтрокаПоискаКонтекстноеМеню" id="276"/>
+								<ExtendedTooltip name="ТаблицаДокументыТМЦСтрокаПоискаРасширеннаяПодсказка" id="277"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаДокументыТМЦСостояниеПросмотра" id="278">
+								<AdditionSource>
+									<Item>ТаблицаДокументыТМЦ</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДокументыТМЦСостояниеПросмотраКонтекстноеМеню" id="279"/>
+								<ExtendedTooltip name="ТаблицаДокументыТМЦСостояниеПросмотраРасширеннаяПодсказка" id="280"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаДокументыТМЦУправлениеПоиском" id="281">
+								<AdditionSource>
+									<Item>ТаблицаДокументыТМЦ</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаДокументыТМЦУправлениеПоискомКонтекстноеМеню" id="282"/>
+								<ExtendedTooltip name="ТаблицаДокументыТМЦУправлениеПоискомРасширеннаяПодсказка" id="283"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<CheckBoxField name="ТаблицаДокументыТМЦПометка" id="312">
+									<DataPath>ТаблицаДокументыТМЦ.Пометка</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТаблицаДокументыТМЦПометкаКонтекстноеМеню" id="313"/>
+									<ExtendedTooltip name="ТаблицаДокументыТМЦПометкаРасширеннаяПодсказка" id="314"/>
+								</CheckBoxField>
+								<InputField name="ТаблицаДокументыТМЦДокумент" id="303">
+									<DataPath>ТаблицаДокументыТМЦ.Документ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаДокументыТМЦДокументКонтекстноеМеню" id="304"/>
+									<ExtendedTooltip name="ТаблицаДокументыТМЦДокументРасширеннаяПодсказка" id="305"/>
+								</InputField>
+								<InputField name="ТаблицаДокументыТМЦПодразделение" id="315">
+									<DataPath>ТаблицаДокументыТМЦ.Подразделение</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаДокументыТМЦПодразделениеКонтекстноеМеню" id="316"/>
+									<ExtendedTooltip name="ТаблицаДокументыТМЦПодразделениеРасширеннаяПодсказка" id="317"/>
+								</InputField>
+								<InputField name="ТаблицаДокументыТМЦСклад" id="306">
+									<DataPath>ТаблицаДокументыТМЦ.Склад</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаДокументыТМЦСкладКонтекстноеМеню" id="307"/>
+									<ExtendedTooltip name="ТаблицаДокументыТМЦСкладРасширеннаяПодсказка" id="308"/>
+								</InputField>
+								<InputField name="ТаблицаДокументыТМЦСкладПолучатель" id="309">
+									<DataPath>ТаблицаДокументыТМЦ.СкладПолучатель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаДокументыТМЦСкладПолучательКонтекстноеМеню" id="310"/>
+									<ExtendedTooltip name="ТаблицаДокументыТМЦСкладПолучательРасширеннаяПодсказка" id="311"/>
+								</InputField>
+								<PictureField name="ТаблицаДокументыТМЦДокументУАТПроведен" id="330">
+									<DataPath>ТаблицаДокументыТМЦ.ДокументУАТПроведен</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.ДокументПроведен</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="ТаблицаДокументыТМЦДокументУАТПроведенКонтекстноеМеню" id="331"/>
+									<ExtendedTooltip name="ТаблицаДокументыТМЦДокументУАТПроведенРасширеннаяПодсказка" id="332"/>
+								</PictureField>
+								<InputField name="ТаблицаПоступлениеМатериаловДокументУАТ" id="318">
+									<DataPath>ТаблицаДокументыТМЦ.ДокументУАТ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПоступлениеМатериаловДокументУАТКонтекстноеМеню" id="319"/>
+									<ExtendedTooltip name="ТаблицаПоступлениеМатериаловДокументУАТРасширеннаяПодсказка" id="320"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаТопливо" id="94">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Потребление топлива</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа топливо</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаТопливоРасширеннаяПодсказка" id="95"/>
+					<ChildItems>
+						<Table name="ТаблицаПотреблениеТоплива" id="55">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаПотреблениеТоплива</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаПотреблениеТопливаКонтекстноеМеню" id="56"/>
+							<AutoCommandBar name="ТаблицаПотреблениеТопливаКоманднаяПанель" id="57">
+								<ChildItems>
+									<Button name="ЗагрузитьПотреблениеТоплива" id="53">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗагрузитьПотреблениеТоплива</CommandName>
+										<ExtendedTooltip name="ЗагрузитьПотреблениеТопливаРасширеннаяПодсказка" id="54"/>
+									</Button>
+									<Button name="ТаблицаПотреблениеТопливаСоздатьДокументы" id="102">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьДокументыПотребленияТоплива</CommandName>
+										<ExtendedTooltip name="ТаблицаПотреблениеТопливаСоздатьДокументыРасширеннаяПодсказка" id="103"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаПотреблениеТопливаРасширеннаяПодсказка" id="58"/>
+							<SearchStringAddition name="ТаблицаПотреблениеТопливаСтрокаПоиска" id="59">
+								<AdditionSource>
+									<Item>ТаблицаПотреблениеТоплива</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПотреблениеТопливаСтрокаПоискаКонтекстноеМеню" id="60"/>
+								<ExtendedTooltip name="ТаблицаПотреблениеТопливаСтрокаПоискаРасширеннаяПодсказка" id="61"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаПотреблениеТопливаСостояниеПросмотра" id="62">
+								<AdditionSource>
+									<Item>ТаблицаПотреблениеТоплива</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПотреблениеТопливаСостояниеПросмотраКонтекстноеМеню" id="63"/>
+								<ExtendedTooltip name="ТаблицаПотреблениеТопливаСостояниеПросмотраРасширеннаяПодсказка" id="64"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаПотреблениеТопливаУправлениеПоиском" id="65">
+								<AdditionSource>
+									<Item>ТаблицаПотреблениеТоплива</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПотреблениеТопливаУправлениеПоискомКонтекстноеМеню" id="66"/>
+								<ExtendedTooltip name="ТаблицаПотреблениеТопливаУправлениеПоискомРасширеннаяПодсказка" id="67"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТаблицаПотреблениеТопливаСклад" id="89">
+									<DataPath>ТаблицаПотреблениеТоплива.Склад</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПотреблениеТопливаСкладКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="ТаблицаПотреблениеТопливаСкладРасширеннаяПодсказка" id="91"/>
+								</InputField>
+								<InputField name="ТаблицаПотреблениеТопливаПодразделениеЗатрат" id="99">
+									<DataPath>ТаблицаПотреблениеТоплива.ПодразделениеЗатрат</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПотреблениеТопливаПодразделениеЗатратКонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="ТаблицаПотреблениеТопливаПодразделениеЗатратРасширеннаяПодсказка" id="101"/>
+								</InputField>
+								<InputField name="ТаблицаПотреблениеТопливаТранспортноеСредство" id="68">
+									<DataPath>ТаблицаПотреблениеТоплива.ТранспортноеСредство</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПотреблениеТопливаТранспортноеСредствоКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ТаблицаПотреблениеТопливаТранспортноеСредствоРасширеннаяПодсказка" id="70"/>
+								</InputField>
+								<InputField name="ТаблицаПотреблениеТопливаНоменклатураКод" id="237">
+									<DataPath>ТаблицаПотреблениеТоплива.Номенклатура.Code</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПотреблениеТопливаНоменклатураКодКонтекстноеМеню" id="238"/>
+									<ExtendedTooltip name="ТаблицаПотреблениеТопливаНоменклатураКодРасширеннаяПодсказка" id="239"/>
+								</InputField>
+								<InputField name="ТаблицаПотреблениеТопливаНоменклатура" id="74">
+									<DataPath>ТаблицаПотреблениеТоплива.Номенклатура</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПотреблениеТопливаНоменклатураКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="ТаблицаПотреблениеТопливаНоменклатураРасширеннаяПодсказка" id="76"/>
+								</InputField>
+								<InputField name="ТаблицаПотреблениеТопливаСчетУчетаГСМ" id="96">
+									<DataPath>ТаблицаПотреблениеТоплива.СчетУчетаГСМ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПотреблениеТопливаСчетУчетаГСМКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="ТаблицаПотреблениеТопливаСчетУчетаГСМРасширеннаяПодсказка" id="98"/>
+								</InputField>
+								<InputField name="ТаблицаПотреблениеТопливаСчетЗатрат" id="86">
+									<DataPath>ТаблицаПотреблениеТоплива.СчетЗатрат</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПотреблениеТопливаСчетЗатратКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="ТаблицаПотреблениеТопливаСчетЗатратРасширеннаяПодсказка" id="88"/>
+								</InputField>
+								<InputField name="ТаблицаПотреблениеТопливаРасходПоФакту" id="80">
+									<DataPath>ТаблицаПотреблениеТоплива.РасходПоФакту</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПотреблениеТопливаРасходПоФактуКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ТаблицаПотреблениеТопливаРасходПоФактуРасширеннаяПодсказка" id="82"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаТехническиеЖидкости" id="191">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Технические жидкости</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа технические жидкости</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаТехническиеЖидкостиРасширеннаяПодсказка" id="192"/>
+					<ChildItems>
+						<Table name="ТаблицаПотреблениеТехническихЖидкостей" id="193">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаПотреблениеТехническихЖидкостей</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаПотреблениеТехническихЖидкостейКонтекстноеМеню" id="194"/>
+							<AutoCommandBar name="ТаблицаПотреблениеТехническихЖидкостейКоманднаяПанель" id="195">
+								<ChildItems>
+									<Button name="ТаблицаПотреблениеТехническихЖидкостейЗагрузитьПотреблениеТехническихЖидкостей" id="233">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗагрузитьПотреблениеТехническихЖидкостей</CommandName>
+										<ExtendedTooltip name="ТаблицаПотреблениеТехническихЖидкостейЗагрузитьПотреблениеТехническихЖидкостейРасширеннаяПодсказка" id="234"/>
+									</Button>
+									<Button name="ТаблицаПотреблениеТехническихЖидкостейСоздатьДокументыПотребленияТехническихЖидкостей" id="235">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьДокументыПотребленияТехническихЖидкостей</CommandName>
+										<ExtendedTooltip name="ТаблицаПотреблениеТехническихЖидкостейСоздатьДокументыПотребленияТехническихЖидкостейРасширеннаяПодсказка" id="236"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаПотреблениеТехническихЖидкостейРасширеннаяПодсказка" id="196"/>
+							<SearchStringAddition name="ТаблицаПотреблениеТехническихЖидкостейСтрокаПоиска" id="197">
+								<AdditionSource>
+									<Item>ТаблицаПотреблениеТехническихЖидкостей</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПотреблениеТехническихЖидкостейСтрокаПоискаКонтекстноеМеню" id="198"/>
+								<ExtendedTooltip name="ТаблицаПотреблениеТехническихЖидкостейСтрокаПоискаРасширеннаяПодсказка" id="199"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаПотреблениеТехническихЖидкостейСостояниеПросмотра" id="200">
+								<AdditionSource>
+									<Item>ТаблицаПотреблениеТехническихЖидкостей</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПотреблениеТехническихЖидкостейСостояниеПросмотраКонтекстноеМеню" id="201"/>
+								<ExtendedTooltip name="ТаблицаПотреблениеТехническихЖидкостейСостояниеПросмотраРасширеннаяПодсказка" id="202"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаПотреблениеТехническихЖидкостейУправлениеПоиском" id="203">
+								<AdditionSource>
+									<Item>ТаблицаПотреблениеТехническихЖидкостей</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПотреблениеТехническихЖидкостейУправлениеПоискомКонтекстноеМеню" id="204"/>
+								<ExtendedTooltip name="ТаблицаПотреблениеТехническихЖидкостейУправлениеПоискомРасширеннаяПодсказка" id="205"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТаблицаПотреблениеТехническихЖидкостейСклад" id="224">
+									<DataPath>ТаблицаПотреблениеТехническихЖидкостей.Склад</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПотреблениеТехническихЖидкостейСкладКонтекстноеМеню" id="225"/>
+									<ExtendedTooltip name="ТаблицаПотреблениеТехническихЖидкостейСкладРасширеннаяПодсказка" id="226"/>
+								</InputField>
+								<InputField name="ТаблицаПотреблениеТехническихЖидкостейПодразделениеЗатрат" id="230">
+									<DataPath>ТаблицаПотреблениеТехническихЖидкостей.ПодразделениеЗатрат</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПотреблениеТехническихЖидкостейПодразделениеЗатратКонтекстноеМеню" id="231"/>
+									<ExtendedTooltip name="ТаблицаПотреблениеТехническихЖидкостейПодразделениеЗатратРасширеннаяПодсказка" id="232"/>
+								</InputField>
+								<InputField name="ТаблицаПотреблениеТехническихЖидкостейТранспортноеСредство" id="206">
+									<DataPath>ТаблицаПотреблениеТехническихЖидкостей.ТранспортноеСредство</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПотреблениеТехническихЖидкостейТранспортноеСредствоКонтекстноеМеню" id="207"/>
+									<ExtendedTooltip name="ТаблицаПотреблениеТехническихЖидкостейТранспортноеСредствоРасширеннаяПодсказка" id="208"/>
+								</InputField>
+								<InputField name="ТаблицаПотреблениеТехническихЖидкостейНоменклатураКод" id="240">
+									<DataPath>ТаблицаПотреблениеТехническихЖидкостей.Номенклатура.Code</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПотреблениеТехническихЖидкостейНоменклатураКодКонтекстноеМеню" id="241"/>
+									<ExtendedTooltip name="ТаблицаПотреблениеТехническихЖидкостейНоменклатураКодРасширеннаяПодсказка" id="242"/>
+								</InputField>
+								<InputField name="ТаблицаПотреблениеТехническихЖидкостейНоменклатура" id="209">
+									<DataPath>ТаблицаПотреблениеТехническихЖидкостей.Номенклатура</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПотреблениеТехническихЖидкостейНоменклатураКонтекстноеМеню" id="210"/>
+									<ExtendedTooltip name="ТаблицаПотреблениеТехническихЖидкостейНоменклатураРасширеннаяПодсказка" id="211"/>
+								</InputField>
+								<InputField name="ТаблицаПотреблениеТехническихЖидкостейСчетУчетаГСМ" id="227">
+									<DataPath>ТаблицаПотреблениеТехническихЖидкостей.СчетУчетаГСМ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПотреблениеТехническихЖидкостейСчетУчетаГСМКонтекстноеМеню" id="228"/>
+									<ExtendedTooltip name="ТаблицаПотреблениеТехническихЖидкостейСчетУчетаГСМРасширеннаяПодсказка" id="229"/>
+								</InputField>
+								<InputField name="ТаблицаПотреблениеТехническихЖидкостейСчетЗатрат" id="221">
+									<DataPath>ТаблицаПотреблениеТехническихЖидкостей.СчетЗатрат</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПотреблениеТехническихЖидкостейСчетЗатратКонтекстноеМеню" id="222"/>
+									<ExtendedTooltip name="ТаблицаПотреблениеТехническихЖидкостейСчетЗатратРасширеннаяПодсказка" id="223"/>
+								</InputField>
+								<InputField name="ТаблицаПотреблениеТехническихЖидкостейРасходПоФакту" id="215">
+									<DataPath>ТаблицаПотреблениеТехническихЖидкостей.РасходПоФакту</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПотреблениеТехническихЖидкостейРасходПоФактуКонтекстноеМеню" id="216"/>
+									<ExtendedTooltip name="ТаблицаПотреблениеТехническихЖидкостейРасходПоФактуРасширеннаяПодсказка" id="217"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСписаниеМатериалов" id="104">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Списание материалов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа списание материалов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСписаниеМатериаловРасширеннаяПодсказка" id="105"/>
+					<ChildItems>
+						<Table name="ТаблицаСписаниеМатериалов" id="106">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаСписаниеМатериалов</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаСписаниеМатериаловКонтекстноеМеню" id="107"/>
+							<AutoCommandBar name="ТаблицаСписаниеМатериаловКоманднаяПанель" id="108">
+								<ChildItems>
+									<Button name="ТаблицаСписаниеМатериаловЗагрузитьСписаниеМатериалов" id="146">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗагрузитьСписаниеМатериалов</CommandName>
+										<ExtendedTooltip name="ТаблицаСписаниеМатериаловЗагрузитьСписаниеМатериаловРасширеннаяПодсказка" id="147"/>
+									</Button>
+									<Button name="ТаблицаСписаниеМатериаловСоздатьДокументыСписаниеМатериалов" id="157">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьДокументыСписаниеМатериалов</CommandName>
+										<ExtendedTooltip name="ТаблицаСписаниеМатериаловСоздатьДокументыСписаниеМатериаловРасширеннаяПодсказка" id="158"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаСписаниеМатериаловРасширеннаяПодсказка" id="109"/>
+							<SearchStringAddition name="ТаблицаСписаниеМатериаловСтрокаПоиска" id="110">
+								<AdditionSource>
+									<Item>ТаблицаСписаниеМатериалов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСписаниеМатериаловСтрокаПоискаКонтекстноеМеню" id="111"/>
+								<ExtendedTooltip name="ТаблицаСписаниеМатериаловСтрокаПоискаРасширеннаяПодсказка" id="112"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаСписаниеМатериаловСостояниеПросмотра" id="113">
+								<AdditionSource>
+									<Item>ТаблицаСписаниеМатериалов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСписаниеМатериаловСостояниеПросмотраКонтекстноеМеню" id="114"/>
+								<ExtendedTooltip name="ТаблицаСписаниеМатериаловСостояниеПросмотраРасширеннаяПодсказка" id="115"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаСписаниеМатериаловУправлениеПоиском" id="116">
+								<AdditionSource>
+									<Item>ТаблицаСписаниеМатериалов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаСписаниеМатериаловУправлениеПоискомКонтекстноеМеню" id="117"/>
+								<ExtendedTooltip name="ТаблицаСписаниеМатериаловУправлениеПоискомРасширеннаяПодсказка" id="118"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТаблицаСписаниеМатериаловСклад" id="137">
+									<DataPath>ТаблицаСписаниеМатериалов.Склад</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСписаниеМатериаловСкладКонтекстноеМеню" id="138"/>
+									<ExtendedTooltip name="ТаблицаСписаниеМатериаловСкладРасширеннаяПодсказка" id="139"/>
+								</InputField>
+								<InputField name="ТаблицаСписаниеМатериаловПодразделениеЗатрат" id="143">
+									<DataPath>ТаблицаСписаниеМатериалов.ПодразделениеЗатрат</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСписаниеМатериаловПодразделениеЗатратКонтекстноеМеню" id="144"/>
+									<ExtendedTooltip name="ТаблицаСписаниеМатериаловПодразделениеЗатратРасширеннаяПодсказка" id="145"/>
+								</InputField>
+								<InputField name="ТаблицаСписаниеМатериаловТранспортноеСредство" id="119">
+									<DataPath>ТаблицаСписаниеМатериалов.ТранспортноеСредство</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСписаниеМатериаловТранспортноеСредствоКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="ТаблицаСписаниеМатериаловТранспортноеСредствоРасширеннаяПодсказка" id="121"/>
+								</InputField>
+								<InputField name="ТаблицаСписаниеМатериаловНоменклатураУАТ" id="151">
+									<DataPath>ТаблицаСписаниеМатериалов.НоменклатураУАТ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСписаниеМатериаловНоменклатураУАТКонтекстноеМеню" id="152"/>
+									<ExtendedTooltip name="ТаблицаСписаниеМатериаловНоменклатураУАТРасширеннаяПодсказка" id="153"/>
+								</InputField>
+								<InputField name="ТаблицаСписаниеМатериаловНоменклатура" id="122">
+									<DataPath>ТаблицаСписаниеМатериалов.Номенклатура</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСписаниеМатериаловНоменклатураКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="ТаблицаСписаниеМатериаловНоменклатураРасширеннаяПодсказка" id="124"/>
+								</InputField>
+								<InputField name="ТаблицаСписаниеМатериаловКоличество" id="148">
+									<DataPath>ТаблицаСписаниеМатериалов.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСписаниеМатериаловКоличествоКонтекстноеМеню" id="149"/>
+									<ExtendedTooltip name="ТаблицаСписаниеМатериаловКоличествоРасширеннаяПодсказка" id="150"/>
+								</InputField>
+								<InputField name="ТаблицаСписаниеМатериаловСчет" id="140">
+									<DataPath>ТаблицаСписаниеМатериалов.Счет</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСписаниеМатериаловСчетКонтекстноеМеню" id="141"/>
+									<ExtendedTooltip name="ТаблицаСписаниеМатериаловСчетРасширеннаяПодсказка" id="142"/>
+								</InputField>
+								<InputField name="ТаблицаСписаниеМатериаловСтатьяЗатрат" id="154">
+									<DataPath>ТаблицаСписаниеМатериалов.СтатьяЗатрат</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСписаниеМатериаловСтатьяЗатратКонтекстноеМеню" id="155"/>
+									<ExtendedTooltip name="ТаблицаСписаниеМатериаловСтатьяЗатратРасширеннаяПодсказка" id="156"/>
+								</InputField>
+								<InputField name="ТаблицаСписаниеМатериаловСчетЗатрат" id="134">
+									<DataPath>ТаблицаСписаниеМатериалов.СчетЗатрат</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаСписаниеМатериаловСчетЗатратКонтекстноеМеню" id="135"/>
+									<ExtendedTooltip name="ТаблицаСписаниеМатериаловСчетЗатратРасширеннаяПодсказка" id="136"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаАналогиНоменклатуры" id="159">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналоги номенклатуры (топливо и тех. жидкости)</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа аналоги номенклатуры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаАналогиНоменклатурыРасширеннаяПодсказка" id="160"/>
+					<ChildItems>
+						<Table name="ТаблицаАналоговНоменклатуры" id="161">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаАналогиНоменклатуры</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаАналоговНоменклатурыКонтекстноеМеню" id="162"/>
+							<AutoCommandBar name="ТаблицаАналоговНоменклатурыКоманднаяПанель" id="163">
+								<ChildItems>
+									<Button name="ТаблицаАналоговНоменклатурыЗаполнитьТаблицуАналоговНоменклатуры" id="183">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗаполнитьТаблицуАналоговНоменклатуры</CommandName>
+										<ExtendedTooltip name="ТаблицаАналоговНоменклатурыЗаполнитьТаблицуАналоговНоменклатурыРасширеннаяПодсказка" id="184"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаАналоговНоменклатурыРасширеннаяПодсказка" id="164"/>
+							<SearchStringAddition name="ТаблицаАналоговНоменклатурыСтрокаПоиска" id="165">
+								<AdditionSource>
+									<Item>ТаблицаАналоговНоменклатуры</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаАналоговНоменклатурыСтрокаПоискаКонтекстноеМеню" id="166"/>
+								<ExtendedTooltip name="ТаблицаАналоговНоменклатурыСтрокаПоискаРасширеннаяПодсказка" id="167"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаАналоговНоменклатурыСостояниеПросмотра" id="168">
+								<AdditionSource>
+									<Item>ТаблицаАналоговНоменклатуры</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаАналоговНоменклатурыСостояниеПросмотраКонтекстноеМеню" id="169"/>
+								<ExtendedTooltip name="ТаблицаАналоговНоменклатурыСостояниеПросмотраРасширеннаяПодсказка" id="170"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаАналоговНоменклатурыУправлениеПоиском" id="171">
+								<AdditionSource>
+									<Item>ТаблицаАналоговНоменклатуры</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаАналоговНоменклатурыУправлениеПоискомКонтекстноеМеню" id="172"/>
+								<ExtendedTooltip name="ТаблицаАналоговНоменклатурыУправлениеПоискомРасширеннаяПодсказка" id="173"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТаблицаАналоговНоменклатурыСклад" id="174">
+									<DataPath>ТаблицаАналогиНоменклатуры.Склад</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаАналоговНоменклатурыСкладКонтекстноеМеню" id="175"/>
+									<ExtendedTooltip name="ТаблицаАналоговНоменклатурыСкладРасширеннаяПодсказка" id="176"/>
+								</InputField>
+								<InputField name="ТаблицаАналоговНоменклатурыНоменклатураКод" id="185">
+									<DataPath>ТаблицаАналогиНоменклатуры.Номенклатура.Code</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаАналоговНоменклатурыНоменклатураКодКонтекстноеМеню" id="186"/>
+									<ExtendedTooltip name="ТаблицаАналоговНоменклатурыНоменклатураКодРасширеннаяПодсказка" id="187"/>
+								</InputField>
+								<InputField name="ТаблицаАналоговНоменклатурыНоменклатура" id="177">
+									<DataPath>ТаблицаАналогиНоменклатуры.Номенклатура</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаАналоговНоменклатурыНоменклатураКонтекстноеМеню" id="178"/>
+									<ExtendedTooltip name="ТаблицаАналоговНоменклатурыНоменклатураРасширеннаяПодсказка" id="179"/>
+								</InputField>
+								<InputField name="ТаблицаАналоговНоменклатурыАналогНоменклатурыКод" id="188">
+									<DataPath>ТаблицаАналогиНоменклатуры.АналогНоменклатуры.Code</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаАналоговНоменклатурыАналогНоменклатурыКодКонтекстноеМеню" id="189"/>
+									<ExtendedTooltip name="ТаблицаАналоговНоменклатурыАналогНоменклатурыКодРасширеннаяПодсказка" id="190"/>
+								</InputField>
+								<InputField name="ТаблицаАналоговНоменклатурыАналогНоменклатуры" id="180">
+									<DataPath>ТаблицаАналогиНоменклатуры.АналогНоменклатуры</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаАналоговНоменклатурыАналогНоменклатурыКонтекстноеМеню" id="181"/>
+									<ExtendedTooltip name="ТаблицаАналоговНоменклатурыАналогНоменклатурыРасширеннаяПодсказка" id="182"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНастройки" id="243">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="244"/>
+					<ChildItems>
+						<Pages name="ГруппаСтраницыНастройки" id="333">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа страницы настройки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа страницы настройки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаСтраницыНастройкиРасширеннаяПодсказка" id="334"/>
+							<ChildItems>
+								<Page name="ГруппаНастройкаЗагрузки" id="337">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка списания ГСМ и ТМЦ</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа настройка загрузки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаНастройкаЗагрузкиРасширеннаяПодсказка" id="338"/>
+									<ChildItems>
+										<Table name="ТаблицаНастройкиСписанияГСМиТМЦизУАТ" id="339">
+											<UseAlternationRowColor>true</UseAlternationRowColor>
+											<EnableStartDrag>true</EnableStartDrag>
+											<DataPath>ТаблицаНастройкиСписанияГСМиТМЦизУАТ</DataPath>
+											<RowPictureDataPath>ТаблицаНастройкиСписанияГСМиТМЦизУАТ.DefaultPicture</RowPictureDataPath>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>true</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+											<ContextMenu name="ТаблицаНастройкиСписанияГСМиТМЦизУАТКонтекстноеМеню" id="340"/>
+											<AutoCommandBar name="ТаблицаНастройкиСписанияГСМиТМЦизУАТКоманднаяПанель" id="341"/>
+											<ExtendedTooltip name="ТаблицаНастройкиСписанияГСМиТМЦизУАТРасширеннаяПодсказка" id="342"/>
+											<SearchStringAddition name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСтрокаПоиска" id="343">
+												<AdditionSource>
+													<Item>ТаблицаНастройкиСписанияГСМиТМЦизУАТ</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСтрокаПоискаКонтекстноеМеню" id="344"/>
+												<ExtendedTooltip name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСтрокаПоискаРасширеннаяПодсказка" id="345"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСостояниеПросмотра" id="346">
+												<AdditionSource>
+													<Item>ТаблицаНастройкиСписанияГСМиТМЦизУАТ</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСостояниеПросмотраКонтекстноеМеню" id="347"/>
+												<ExtendedTooltip name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСостояниеПросмотраРасширеннаяПодсказка" id="348"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ТаблицаНастройкиСписанияГСМиТМЦизУАТУправлениеПоиском" id="349">
+												<AdditionSource>
+													<Item>ТаблицаНастройкиСписанияГСМиТМЦизУАТ</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ТаблицаНастройкиСписанияГСМиТМЦизУАТУправлениеПоискомКонтекстноеМеню" id="350"/>
+												<ExtendedTooltip name="ТаблицаНастройкиСписанияГСМиТМЦизУАТУправлениеПоискомРасширеннаяПодсказка" id="351"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="ТаблицаНастройкиСписанияГСМиТМЦизУАТПериод" id="352">
+													<DataPath>ТаблицаНастройкиСписанияГСМиТМЦизУАТ.Period</DataPath>
+													<ContextMenu name="ТаблицаНастройкиСписанияГСМиТМЦизУАТПериодКонтекстноеМеню" id="353"/>
+													<ExtendedTooltip name="ТаблицаНастройкиСписанияГСМиТМЦизУАТПериодРасширеннаяПодсказка" id="354"/>
+												</LabelField>
+												<LabelField name="ТаблицаНастройкиСписанияГСМиТМЦизУАТПодразделение" id="358">
+													<DataPath>ТаблицаНастройкиСписанияГСМиТМЦизУАТ.Подразделение</DataPath>
+													<ContextMenu name="ТаблицаНастройкиСписанияГСМиТМЦизУАТПодразделениеКонтекстноеМеню" id="359"/>
+													<ExtendedTooltip name="ТаблицаНастройкиСписанияГСМиТМЦизУАТПодразделениеРасширеннаяПодсказка" id="360"/>
+												</LabelField>
+												<LabelField name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСкладТопливо" id="361">
+													<DataPath>ТаблицаНастройкиСписанияГСМиТМЦизУАТ.СкладТопливо</DataPath>
+													<ContextMenu name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСкладТопливоКонтекстноеМеню" id="362"/>
+													<ExtendedTooltip name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСкладТопливоРасширеннаяПодсказка" id="363"/>
+												</LabelField>
+												<LabelField name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСкладТехническиеЖидкости" id="364">
+													<DataPath>ТаблицаНастройкиСписанияГСМиТМЦизУАТ.СкладТехническиеЖидкости</DataPath>
+													<ContextMenu name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСкладТехническиеЖидкостиКонтекстноеМеню" id="365"/>
+													<ExtendedTooltip name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСкладТехническиеЖидкостиРасширеннаяПодсказка" id="366"/>
+												</LabelField>
+												<LabelField name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСчетУчетаГСМ" id="367">
+													<DataPath>ТаблицаНастройкиСписанияГСМиТМЦизУАТ.СчетУчетаГСМ</DataPath>
+													<ContextMenu name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСчетУчетаГСМКонтекстноеМеню" id="368"/>
+													<ExtendedTooltip name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСчетУчетаГСМРасширеннаяПодсказка" id="369"/>
+												</LabelField>
+												<LabelField name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСчетЗатрат" id="370">
+													<DataPath>ТаблицаНастройкиСписанияГСМиТМЦизУАТ.СчетЗатрат</DataPath>
+													<ContextMenu name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСчетЗатратКонтекстноеМеню" id="371"/>
+													<ExtendedTooltip name="ТаблицаНастройкиСписанияГСМиТМЦизУАТСчетЗатратРасширеннаяПодсказка" id="372"/>
+												</LabelField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаСоответствияСчетовИСтатейЗатрат" id="373">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Соответствия счетов учета номенклатуры и статей затрат</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа соответствия счетов и статей затрат</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаСоответствияСчетовИСтатейЗатратРасширеннаяПодсказка" id="374"/>
+									<ChildItems>
+										<Table name="ТаблицаСоответствияСчетовИСтатейЗатрат" id="375">
+											<UseAlternationRowColor>true</UseAlternationRowColor>
+											<EnableStartDrag>true</EnableStartDrag>
+											<DataPath>ТаблицаСоответствияСчетовИСтатейЗатрат</DataPath>
+											<RowPictureDataPath>ТаблицаСоответствияСчетовИСтатейЗатрат.DefaultPicture</RowPictureDataPath>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>true</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+											<ContextMenu name="ТаблицаСоответствияСчетовИСтатейЗатратКонтекстноеМеню" id="376"/>
+											<AutoCommandBar name="ТаблицаСоответствияСчетовИСтатейЗатратКоманднаяПанель" id="377"/>
+											<ExtendedTooltip name="ТаблицаСоответствияСчетовИСтатейЗатратРасширеннаяПодсказка" id="378"/>
+											<SearchStringAddition name="ТаблицаСоответствияСчетовИСтатейЗатратСтрокаПоиска" id="379">
+												<AdditionSource>
+													<Item>ТаблицаСоответствияСчетовИСтатейЗатрат</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ТаблицаСоответствияСчетовИСтатейЗатратСтрокаПоискаКонтекстноеМеню" id="380"/>
+												<ExtendedTooltip name="ТаблицаСоответствияСчетовИСтатейЗатратСтрокаПоискаРасширеннаяПодсказка" id="381"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ТаблицаСоответствияСчетовИСтатейЗатратСостояниеПросмотра" id="382">
+												<AdditionSource>
+													<Item>ТаблицаСоответствияСчетовИСтатейЗатрат</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ТаблицаСоответствияСчетовИСтатейЗатратСостояниеПросмотраКонтекстноеМеню" id="383"/>
+												<ExtendedTooltip name="ТаблицаСоответствияСчетовИСтатейЗатратСостояниеПросмотраРасширеннаяПодсказка" id="384"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ТаблицаСоответствияСчетовИСтатейЗатратУправлениеПоиском" id="385">
+												<AdditionSource>
+													<Item>ТаблицаСоответствияСчетовИСтатейЗатрат</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ТаблицаСоответствияСчетовИСтатейЗатратУправлениеПоискомКонтекстноеМеню" id="386"/>
+												<ExtendedTooltip name="ТаблицаСоответствияСчетовИСтатейЗатратУправлениеПоискомРасширеннаяПодсказка" id="387"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="ТаблицаСоответствияСчетовИСтатейЗатратСчет" id="388">
+													<DataPath>ТаблицаСоответствияСчетовИСтатейЗатрат.Счет</DataPath>
+													<ContextMenu name="ТаблицаСоответствияСчетовИСтатейЗатратСчетКонтекстноеМеню" id="389"/>
+													<ExtendedTooltip name="ТаблицаСоответствияСчетовИСтатейЗатратСчетРасширеннаяПодсказка" id="390"/>
+												</LabelField>
+												<LabelField name="ТаблицаСоответствияСчетовИСтатейЗатратСтатьяЗатрат" id="391">
+													<DataPath>ТаблицаСоответствияСчетовИСтатейЗатрат.СтатьяЗатрат</DataPath>
+													<ContextMenu name="ТаблицаСоответствияСчетовИСтатейЗатратСтатьяЗатратКонтекстноеМеню" id="392"/>
+													<ExtendedTooltip name="ТаблицаСоответствияСчетовИСтатейЗатратСтатьяЗатратРасширеннаяПодсказка" id="393"/>
+												</LabelField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаСклады" id="335">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Склады для УАТ</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа склады</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаСкладыРасширеннаяПодсказка" id="336"/>
+									<ChildItems>
+										<Table name="ТаблицаСкладыУАТ" id="247">
+											<UseAlternationRowColor>true</UseAlternationRowColor>
+											<EnableStartDrag>true</EnableStartDrag>
+											<DataPath>ТаблицаСкладыУАТ</DataPath>
+											<RowPictureDataPath>ТаблицаСкладыУАТ.DefaultPicture</RowPictureDataPath>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>true</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+											<ContextMenu name="ТаблицаСкладыУАТКонтекстноеМеню" id="248"/>
+											<AutoCommandBar name="ТаблицаСкладыУАТКоманднаяПанель" id="249"/>
+											<ExtendedTooltip name="ТаблицаСкладыУАТРасширеннаяПодсказка" id="250"/>
+											<SearchStringAddition name="ТаблицаСкладыУАТСтрокаПоиска" id="251">
+												<AdditionSource>
+													<Item>ТаблицаСкладыУАТ</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ТаблицаСкладыУАТСтрокаПоискаКонтекстноеМеню" id="252"/>
+												<ExtendedTooltip name="ТаблицаСкладыУАТСтрокаПоискаРасширеннаяПодсказка" id="253"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ТаблицаСкладыУАТСостояниеПросмотра" id="254">
+												<AdditionSource>
+													<Item>ТаблицаСкладыУАТ</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ТаблицаСкладыУАТСостояниеПросмотраКонтекстноеМеню" id="255"/>
+												<ExtendedTooltip name="ТаблицаСкладыУАТСостояниеПросмотраРасширеннаяПодсказка" id="256"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ТаблицаСкладыУАТУправлениеПоиском" id="257">
+												<AdditionSource>
+													<Item>ТаблицаСкладыУАТ</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ТаблицаСкладыУАТУправлениеПоискомКонтекстноеМеню" id="258"/>
+												<ExtendedTooltip name="ТаблицаСкладыУАТУправлениеПоискомРасширеннаяПодсказка" id="259"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="ТаблицаСкладыУАТОрганизация" id="260">
+													<DataPath>ТаблицаСкладыУАТ.Организация</DataPath>
+													<ContextMenu name="ТаблицаСкладыУАТОрганизацияКонтекстноеМеню" id="261"/>
+													<ExtendedTooltip name="ТаблицаСкладыУАТОрганизацияРасширеннаяПодсказка" id="262"/>
+												</LabelField>
+												<LabelField name="ТаблицаСкладыУАТСклад" id="263">
+													<DataPath>ТаблицаСкладыУАТ.Склад</DataPath>
+													<ContextMenu name="ТаблицаСкладыУАТСкладКонтекстноеМеню" id="264"/>
+													<ExtendedTooltip name="ТаблицаСкладыУАТСкладРасширеннаяПодсказка" id="265"/>
+												</LabelField>
+												<LabelField name="ТаблицаСкладыУАТГУИД" id="266">
+													<DataPath>ТаблицаСкладыУАТ.ГУИД</DataPath>
+													<ContextMenu name="ТаблицаСкладыУАТГУИДКонтекстноеМеню" id="267"/>
+													<ExtendedTooltip name="ТаблицаСкладыУАТГУИДРасширеннаяПодсказка" id="268"/>
+												</LabelField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗагрузкаПотребленияГСМиСписанияМатериаловИзУАТ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПериодЗаполненияСтрокой" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период заполнения строкой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаПотреблениеТоплива" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Потребление топлива</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ТранспортноеСредство" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Транспортное средство</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТранспортныеСредства</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Номенклатура" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="РасходПоФакту" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расход по факту</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СчетЗатрат" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет затрат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfAccountsRef.Хозрасчетный</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Склад" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СчетУчетаГСМ" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет учета ГСМ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfAccountsRef.Хозрасчетный</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПодразделениеЗатрат" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение затрат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПодразделенияОрганизаций</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаСписаниеМатериалов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списание материалов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ТранспортноеСредство" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Транспортное средство</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТранспортныеСредства</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Номенклатура" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СчетЗатрат" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет затрат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfAccountsRef.Хозрасчетный</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Склад" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Счет" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfAccountsRef.Хозрасчетный</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПодразделениеЗатрат" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение затрат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПодразделенияОрганизаций</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НоменклатураУАТ" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура УАТ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтатьяЗатрат" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья затрат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтатьиЗатрат</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаАналогиНоменклатуры" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица аналоги номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Склад" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Номенклатура" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="АналогНоменклатуры" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Аналог номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаПотреблениеТехническихЖидкостей" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Потребление тех. жидкостей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ТранспортноеСредство" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Транспортное средство</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ТранспортныеСредства</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Номенклатура" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="РасходПоНорме" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расход по норме</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="РасходПоФакту" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расход по факту</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СчетЗатрат" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет затрат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfAccountsRef.Хозрасчетный</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Склад" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СчетУчетаГСМ" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет учета ГСМ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfAccountsRef.Хозрасчетный</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПодразделениеЗатрат" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение затрат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПодразделенияОрганизаций</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СписокВыгруженныхОбъектов" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список выгруженных объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаДокументыТМЦ" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица документы ТМЦ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Документ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.АвансовыйОтчет</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОприходованиеТоваров</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПоступлениеТоваровУслуг</v8:Type>
+						<v8:Type>cfg:DocumentRef.ИнвентаризацияТоваровНаСкладе</v8:Type>
+						<v8:Type>cfg:DocumentRef.ПеремещениеТоваров</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Склад" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СкладПолучатель" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад-получатель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Пометка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Подразделение" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПодразделенияОрганизаций</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ГУИД" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ГУИД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДокументУАТ" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ УАТ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДокументУАТПроведен" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ УАТ проведен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаСкладыУАТ" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица склады УАТ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийЮЦАУ_СкладыУАТ.Организация КАК Организация,
+	РегистрСведенийЮЦАУ_СкладыУАТ.Склад КАК Склад,
+	УНИКАЛЬНЫЙИДЕНТИФИКАТОР(РегистрСведенийЮЦАУ_СкладыУАТ.Склад) КАК ГУИД
+ИЗ
+	РегистрСведений.ЮЦАУ_СкладыУАТ КАК РегистрСведенийЮЦАУ_СкладыУАТ</QueryText>
+				<MainTable>InformationRegister.ЮЦАУ_СкладыУАТ</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТаблицаДокументыТМЦУАТ" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица документы ТМЦ УАТ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ГУИД" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ГУИД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДокументУАТ" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ УАТ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДокументУАТПроведен" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ УАТ проведен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаНастройкиСписанияГСМиТМЦизУАТ" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица настройки списания ГСМи ТМЦиз УАТ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ЮЦАУ_НастройкаЗагрузкиСписанияГСМиТМЦизУАТ</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТаблицаСоответствияСчетовИСтатейЗатрат" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица соответствия счетов и статей затрат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ЮЦАУ_СоответствияСчетовУчетаНоменклатурыИСтатейЗатрат</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьПотреблениеТоплива" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить потребление топлива</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить потребление топлива</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьПотреблениеТоплива</Action>
+		</Command>
+		<Command name="СоздатьДокументыПотребленияТоплива" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документы потребления топлива</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документы потребления топлива</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьДокументыПотребленияТоплива</Action>
+		</Command>
+		<Command name="ЗагрузитьСписаниеМатериалов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить списание материалов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить списание материалов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьСписаниеМатериалов</Action>
+		</Command>
+		<Command name="СоздатьДокументыСписаниеМатериалов" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документы списания материалов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документы списание материалов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьДокументыСписаниеМатериалов</Action>
+		</Command>
+		<Command name="ЗаполнитьТаблицуАналоговНоменклатуры" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить таблицу аналогов номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить таблицу аналогов номенклатуры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьТаблицуАналоговНоменклатуры</Action>
+		</Command>
+		<Command name="ЗагрузитьПотреблениеТехническихЖидкостей" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить потребление тех. жидкостей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить потребление технических жидкостей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьПотреблениеТехническихЖидкостей</Action>
+		</Command>
+		<Command name="СоздатьДокументыПотребленияТехническихЖидкостей" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документы потребления тех. жидкостей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документы потребления технических жидкостей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьДокументыПотребленияТехническихЖидкостей</Action>
+		</Command>
+		<Command name="ЗаполнитьТаблицуДвиженияТМЦ" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить таблицу движения ТМЦ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить таблицу движения ТМЦ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьТаблицуДвиженияТМЦ</Action>
+		</Command>
+		<Command name="ВыгрузитьДокументыТМЦвУАТ" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить документы ТМЦ в УАТ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить документы ТМЦв УАТ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьДокументыТМЦвУАТ</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="33ad6db2-40bf-468d-bba0-9d3ac190922e">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.НазначенияПомещения" category="Ref">
+				<xr:TypeId>8f02c182-e91f-4d5c-b442-c20654120b15</xr:TypeId>
+				<xr:ValueId>f8153c0a-c6bf-408e-8fa1-f243f3f9f318</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.НазначенияПомещения" category="Manager">
+				<xr:TypeId>ec52757f-a505-4c1a-81f3-c4958d358f2a</xr:TypeId>
+				<xr:ValueId>ef0fc90a-0402-4f19-86e2-f4b73534acd7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.НазначенияПомещения" category="List">
+				<xr:TypeId>6dceef52-1789-4091-9dce-0aaa8dcbd70a</xr:TypeId>
+				<xr:ValueId>4e5a2b7e-a6a0-4aae-be8e-705896d17052</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>НазначенияПомещения</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

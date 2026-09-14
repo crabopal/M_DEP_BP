@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Constant uuid="471a9ccd-edb8-4404-9a69-07722e833586">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ВестиУчетРасчетовСКонтрагентами" category="Manager">
+				<xr:TypeId>0a456bd7-6a7d-4618-b486-ba9877bb5d40</xr:TypeId>
+				<xr:ValueId>363ea0c6-147d-4d6d-9fc0-06630c8d77ec</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ВестиУчетРасчетовСКонтрагентами" category="ValueManager">
+				<xr:TypeId>ebd9f811-f2db-443b-97ce-5ed3cb3ef66b</xr:TypeId>
+				<xr:ValueId>32817108-d3a8-4c62-bd93-533dbc6824e1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ВестиУчетРасчетовСКонтрагентами" category="ValueKey">
+				<xr:TypeId>0d5cb1e1-4765-4f77-b5fd-100c7ebe1c54</xr:TypeId>
+				<xr:ValueId>f5f762ba-565b-4d5f-b9b3-2f5181d11610</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВестиУчетРасчетовСКонтрагентами</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>4e90fb14-d74f-4c21-96a8-fbf06c2819d9</ExtendedConfigurationObject>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Properties>
+	</Constant>
+</MetaDataObject>

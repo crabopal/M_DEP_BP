@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Constant uuid="3122feb1-4a17-4104-927b-ef98b2724d50">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ВестиУчетПоПодразделениям" category="Manager">
+				<xr:TypeId>5820506d-642b-4e9c-b119-a1655a280f94</xr:TypeId>
+				<xr:ValueId>1feb42cb-c8b2-489b-a086-e7281bbc8999</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ВестиУчетПоПодразделениям" category="ValueManager">
+				<xr:TypeId>fa670d57-816a-46ba-bf81-222e2f77e5f2</xr:TypeId>
+				<xr:ValueId>4bb97bc6-b72e-46db-b989-bde43e7ce8f9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ВестиУчетПоПодразделениям" category="ValueKey">
+				<xr:TypeId>bbe9cb14-7f87-58ea-93be-c559160853fb</xr:TypeId>
+				<xr:ValueId>62b7a4aa-944a-5d60-92bc-d3cd95dc98c5</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВестиУчетПоПодразделениям</Name>
+			<Comment/>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Properties>
+	</Constant>
+</MetaDataObject>

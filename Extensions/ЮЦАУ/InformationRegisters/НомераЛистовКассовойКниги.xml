@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="efc5ec9c-3082-43e0-b6ab-fd50f158e8cd">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.НомераЛистовКассовойКниги" category="Record">
+				<xr:TypeId>003d88ba-3b1f-4408-86b5-be0cc05b3cf1</xr:TypeId>
+				<xr:ValueId>33422e1a-d5de-467d-aa33-c13424998d3b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.НомераЛистовКассовойКниги" category="Manager">
+				<xr:TypeId>923302cd-e739-4801-8144-4e0d7c68f6a7</xr:TypeId>
+				<xr:ValueId>161bdc46-94f8-4e8c-9c70-3408499a4244</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.НомераЛистовКассовойКниги" category="Selection">
+				<xr:TypeId>3f745460-a503-411f-8beb-b009f5e956c2</xr:TypeId>
+				<xr:ValueId>8ba80244-60bb-497d-94eb-54ad3e1fca01</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.НомераЛистовКассовойКниги" category="List">
+				<xr:TypeId>8c578297-2e51-41cf-ac8f-ab5aad026f92</xr:TypeId>
+				<xr:ValueId>3b3b32de-fd76-47b7-91ff-3d82d1a6005c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.НомераЛистовКассовойКниги" category="RecordSet">
+				<xr:TypeId>d1b45b90-ef8a-44bb-8e56-22235c560b82</xr:TypeId>
+				<xr:ValueId>5ae22d82-c195-4955-be48-c3c8b6ad301d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.НомераЛистовКассовойКниги" category="RecordKey">
+				<xr:TypeId>b7f30d8f-138d-4890-919e-504286ffca44</xr:TypeId>
+				<xr:ValueId>8c599847-c7ed-4a1a-9b2a-479d58c33b00</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.НомераЛистовКассовойКниги" category="RecordManager">
+				<xr:TypeId>32ed33a5-1c0e-40f8-9147-2955c19ff800</xr:TypeId>
+				<xr:ValueId>4b76da3d-2179-4008-b74c-616eedfea194</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>НомераЛистовКассовойКниги</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>bc05e963-642d-4f24-9ff6-627b9c709839</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Day</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects/>
+	</InformationRegister>
+</MetaDataObject>

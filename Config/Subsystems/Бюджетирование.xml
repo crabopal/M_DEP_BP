@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="86b12f6b-9892-46d1-ba50-81c28798bfc6">
+		<Properties>
+			<Name>Бюджетирование</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бюджетирование</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.Бюджетирование</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыГраницОтбораИсточникаПланирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыОстатковОборотовБюджета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ИзмеренияБюджетирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыПодразделений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СоответствиеПодразделенийИПодразделенийОрганизаций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыБюджетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ДетализацияПланирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыПланирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СостоянияОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыОпределенияВалютыОборотаПоСтатье</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОборотыБюджетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыДанныхДляОтчетовБюджетированияИсточники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыДанныхДляОтчетовБюджетирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">b688ee95-1026-44ea-acd5-2a96b130e24a</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОборотыПоСтатьямБюджетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">55fcf005-0a66-4e5d-8118-29ee9dd9fd5d</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СтатьиБюджетногоКлассификатора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыПереносаОтклоненийПланФакт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.Периодичность</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыРаспределенияЗначенийБюджетирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыИзмененийПоПериодамБюджетирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ГраницыПериодовБюджетирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ИспользованиеКонтролируемыхЗначенийБюджетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.КонтролируемыеЗначенияБюджетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыОперацийЗаявкиНаРасходование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Бюджетирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СравнительныйАнализОборотовПоСтатьям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.БюджетыПоУчасткам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">4f084a3a-8e49-47ad-8fd1-aacf53f74b98</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">dc21e0ea-d316-445f-aa23-bd40158cda9e</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">5c7d2edf-e2c0-4263-a7aa-482129d304c9</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Бюджетирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.БюджетыПоУчасткамНовый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Бюджеты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатьиБюджета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СценарииПланирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатьиОборотовПоБюджетам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИсточникиДанныхДляРасчетовБюджетирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПланированиеБюджета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.УчетФактическихДанныхПоБюджетам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">d7417999-58aa-4269-b45a-3c14be86793c</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">dbf57588-a600-4dfe-992c-9237feaa3613</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВедомостьУчетаПоказателейКАУ</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>НСИ</Subsystem>
+			<Subsystem>Планирование</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

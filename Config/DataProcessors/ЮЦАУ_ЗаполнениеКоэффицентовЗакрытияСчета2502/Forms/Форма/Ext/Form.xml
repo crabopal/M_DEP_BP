@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВидОперации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид операции</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВидОперацииРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="ПериодЗаполненияСтрокой" id="3">
+					<DataPath>ПериодЗаполненияСтрокой</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период заполнения</v8:content>
+						</v8:item>
+					</Title>
+					<WarningOnEditRepresentation>DontShow</WarningOnEditRepresentation>
+					<WarningOnEdit>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение месяца начисления приведет к перезаполнению документа</v8:content>
+						</v8:item>
+					</WarningOnEdit>
+					<Width>12</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ChoiceButton>true</ChoiceButton>
+					<SpinButton>true</SpinButton>
+					<ChoiceButtonPicture>
+						<xr:Ref>StdPicture.InputFieldCalendar</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</ChoiceButtonPicture>
+					<ContextMenu name="ПериодЗаполненияСтрокойКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ПериодЗаполненияСтрокойРасширеннаяПодсказка" id="5"/>
+					<Events>
+						<Event name="OnChange">ПериодЗаполненияСтрокойПриИзменении</Event>
+						<Event name="AutoComplete">ПериодЗаполненияСтрокойАвтоПодбор</Event>
+						<Event name="StartChoice">ПериодЗаполненияСтрокойНачалоВыбора</Event>
+						<Event name="Tuning">ПериодЗаполненияСтрокойРегулирование</Event>
+						<Event name="TextEditEnd">ПериодЗаполненияСтрокойОкончаниеВводаТекста</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПодразделениеДт20" id="53">
+					<DataPath>Объект.ПодразделениеДт20</DataPath>
+					<ContextMenu name="ПодразделениеДт20КонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ПодразделениеДт20РасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<Button name="ЗаполнитьДокументы" id="6">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗаполнитьДокументы</CommandName>
+					<ExtendedTooltip name="ЗаполнитьДокументыРасширеннаяПодсказка" id="7"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДокументы" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДокументыРасширеннаяПодсказка" id="9"/>
+			<ChildItems>
+				<Table name="Список" id="10">
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>Список</DataPath>
+					<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+					<ContextMenu name="СписокКонтекстноеМеню" id="11"/>
+					<AutoCommandBar name="СписокКоманднаяПанель" id="12"/>
+					<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="13"/>
+					<SearchStringAddition name="СписокСтрокаПоиска" id="14">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="15"/>
+						<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокСостояниеПросмотра" id="17">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="18"/>
+						<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокУправлениеПоиском" id="20">
+						<AdditionSource>
+							<Item>Список</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="21"/>
+						<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="НастройкаЗакрытияСчета25_02Дата" id="23">
+							<DataPath>Список.Дата</DataPath>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДЛФ=D</v8:content>
+								</v8:item>
+							</Format>
+							<ContextMenu name="НастройкаЗакрытияСчета25_02ДатаКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="НастройкаЗакрытияСчета25_02ДатаРасширеннаяПодсказка" id="25"/>
+						</LabelField>
+						<LabelField name="НастройкаЗакрытияСчета25_02Номер" id="26">
+							<DataPath>Список.Номер</DataPath>
+							<ContextMenu name="НастройкаЗакрытияСчета25_02НомерКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="НастройкаЗакрытияСчета25_02НомерРасширеннаяПодсказка" id="28"/>
+						</LabelField>
+						<LabelField name="НастройкаЗакрытияСчета25_02Организация" id="29">
+							<DataPath>Список.Организация</DataPath>
+							<ContextMenu name="НастройкаЗакрытияСчета25_02ОрганизацияКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="НастройкаЗакрытияСчета25_02ОрганизацияРасширеннаяПодсказка" id="31"/>
+						</LabelField>
+						<LabelField name="НастройкаЗакрытияСчета25_02ПодразделениеДт20" id="44">
+							<DataPath>Список.ПодразделениеДт20</DataPath>
+							<ContextMenu name="НастройкаЗакрытияСчета25_02ПодразделениеДт20КонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="НастройкаЗакрытияСчета25_02ПодразделениеДт20РасширеннаяПодсказка" id="46"/>
+						</LabelField>
+						<LabelField name="НастройкаЗакрытияСчета25_02ПодразделениеКт25" id="41">
+							<DataPath>Список.ПодразделениеКт25</DataPath>
+							<ContextMenu name="НастройкаЗакрытияСчета25_02ПодразделениеКт25КонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="НастройкаЗакрытияСчета25_02ПодразделениеКт25РасширеннаяПодсказка" id="43"/>
+						</LabelField>
+						<LabelField name="НастройкаЗакрытияСчета25_02Комментарий" id="32">
+							<DataPath>Список.Комментарий</DataPath>
+							<ContextMenu name="НастройкаЗакрытияСчета25_02КомментарийКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="НастройкаЗакрытияСчета25_02КомментарийРасширеннаяПодсказка" id="34"/>
+						</LabelField>
+						<LabelField name="НастройкаЗакрытияСчета25_02Ответственный" id="35">
+							<DataPath>Список.Ответственный</DataPath>
+							<ContextMenu name="НастройкаЗакрытияСчета25_02ОтветственныйКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="НастройкаЗакрытияСчета25_02ОтветственныйРасширеннаяПодсказка" id="37"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЮЦАУ_ЗаполнениеКоэффицентовЗакрытияСчета2502</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПериодЗаполненияСтрокой" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период заполнения строкой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Список" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ЮЦАУ_НастройкаЗакрытияСчета25_02.Ссылка КАК Ссылка,
+	ЮЦАУ_НастройкаЗакрытияСчета25_02.ПометкаУдаления КАК ПометкаУдаления,
+	ЮЦАУ_НастройкаЗакрытияСчета25_02.Номер КАК Номер,
+	ЮЦАУ_НастройкаЗакрытияСчета25_02.Дата КАК Дата,
+	ЮЦАУ_НастройкаЗакрытияСчета25_02.Проведен КАК Проведен,
+	ЮЦАУ_НастройкаЗакрытияСчета25_02.Организация КАК Организация,
+	ЮЦАУ_НастройкаЗакрытияСчета25_02.Комментарий КАК Комментарий,
+	ЮЦАУ_НастройкаЗакрытияСчета25_02.Ответственный КАК Ответственный,
+	ЮЦАУ_НастройкаЗакрытияСчета25_02.РучнаяКорректировка КАК РучнаяКорректировка,
+	ЮЦАУ_НастройкаЗакрытияСчета25_02.ПодразделениеДт20 КАК ПодразделениеДт20,
+	ЮЦАУ_НастройкаЗакрытияСчета25_02.ПодразделениеКт25 КАК ПодразделениеКт25,
+	ВЫБОР
+		КОГДА ЮЦАУ_НастройкаЗакрытияСчета25_02.РучнаяКорректировка = ИСТИНА
+			ТОГДА ВЫБОР
+					КОГДА ЮЦАУ_НастройкаЗакрытияСчета25_02.ПометкаУдаления = ИСТИНА
+						ТОГДА 10
+					КОГДА ЮЦАУ_НастройкаЗакрытияСчета25_02.Проведен = ЛОЖЬ
+						ТОГДА 9
+					ИНАЧЕ 8
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА ЮЦАУ_НастройкаЗакрытияСчета25_02.ПометкаУдаления = ИСТИНА
+					ТОГДА 2
+				КОГДА ЮЦАУ_НастройкаЗакрытияСчета25_02.Проведен = ИСТИНА
+					ТОГДА 1
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК СостояниеДокумента
+ИЗ
+	Документ.ЮЦАУ_НастройкаЗакрытияСчета25_02 КАК ЮЦАУ_НастройкаЗакрытияСчета25_02</QueryText>
+				<MainTable>Document.ЮЦАУ_НастройкаЗакрытияСчета25_02</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьДокументы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьДокументы</Action>
+		</Command>
+	</Commands>
+</Form>

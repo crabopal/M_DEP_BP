@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="e6b6f809-8b64-471b-ae6c-fab6685fc349">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ЦелиРасходаМатериалов" category="Object">
+				<xr:TypeId>37a0ac21-4f8a-4665-bace-274b57feda9b</xr:TypeId>
+				<xr:ValueId>029b7feb-fac0-46d5-b474-1b3828469aab</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ЦелиРасходаМатериалов" category="Ref">
+				<xr:TypeId>af9eeba2-9e7f-4a81-9b52-735df5c3dddf</xr:TypeId>
+				<xr:ValueId>a95dc893-77df-4d67-87f5-5697c7c74e24</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ЦелиРасходаМатериалов" category="Selection">
+				<xr:TypeId>0ccacdf3-d7e2-4382-8dce-579d3b35373c</xr:TypeId>
+				<xr:ValueId>e97a2989-f6c9-4eae-91c1-b7bef9dd29dc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ЦелиРасходаМатериалов" category="List">
+				<xr:TypeId>c2e66522-dfa3-4fcb-a453-40d30381b2c6</xr:TypeId>
+				<xr:ValueId>c38bb2ee-64a1-46cc-95f4-7e1049b267c4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ЦелиРасходаМатериалов" category="Manager">
+				<xr:TypeId>fbec9139-f2cf-4a4a-9224-53b146ff48ab</xr:TypeId>
+				<xr:ValueId>56542777-9c05-4fae-bb51-596c718c1aaf</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ЦелиРасходаМатериалов</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>
